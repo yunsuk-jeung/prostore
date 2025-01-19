@@ -1,4 +1,7 @@
 {
-  "singleQuote": true, 
-  "jsxSingleQuote": false 
+  "singleQuote": true,
+  "jsxSingleQuote": false,
+  "plugins": [
+    "prettier-plugin-prisma"
+  ]
 }

@@ -8,7 +8,7 @@ const LoadingPage = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '100v<100vh></100vh>h',
+        height: '100vh',
         width: '100wh',
       }}
     >

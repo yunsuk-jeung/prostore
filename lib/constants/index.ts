@@ -18,9 +18,9 @@ export const signUpDefaultValues = {
   confirmPassword: '',
 };
 export const shippingAddressDefaultValues = {
-  fullName: 'Your Name',
-  streetAddress: '123 Main st',
-  city: 'Any town',
-  postalCode: '12345',
-  country: 'AUS',
+  fullName: '',
+  streetAddress: '',
+  city: '',
+  postalCode: '',
+  country: '',
 };

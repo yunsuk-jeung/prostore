@@ -17,7 +17,6 @@ import { ShippingAddress } from '@/types';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
-import { userAgent } from 'next/server';
 import { formatCurrency } from '@/lib/utils';
 
 export const metadata: Metadata = {

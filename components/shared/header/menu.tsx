@@ -10,8 +10,12 @@ import {
   SheetTrigger,
 } from '@/components/ui/sheet';
 import UserButton from './user-button';
+import { auth } from '@/auth';
+import { signOutUser } from '@/lib/actions/user.actions';
 
-const Menu = () => {
+const Menu = async () => {
+  const session = await auth();
+
   return (
     <div className="flex justify-end gap-3">
       <nav className="hidden md:flex w-full max-w-xs gap-1">
@@ -36,11 +40,15 @@ const Menu = () => {
                 <ShoppingCart /> Cart
               </Link>
             </Button>
+            {/* {session ? ( */}
+            {/*   <Button onClick={signOutUser}>Sign Out</Button> */}
+            {/* ) : ( */}
             <Button asChild>
               <Link href="/sign-in">
                 <UserIcon /> Sign In
               </Link>
             </Button>
+            {/* )} */}
             <SheetDescription></SheetDescription>
           </SheetContent>
         </Sheet>

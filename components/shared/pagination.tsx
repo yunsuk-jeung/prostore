@@ -4,7 +4,7 @@ import { Button } from '../ui/button';
 import { formUrlQuery } from '@/lib/utils';
 
 type PaginationProps = {
-  page: Number | string;
+  page: number | string;
   totalPages: number;
   urlParamName?: string;
 };

@@ -244,6 +244,7 @@ export async function getMyOrders({
   page: number;
 }) {
   const session = await auth();
+
   if (!session) throw new Error('User is not authorized');
 
   const data = await prisma.order.findMany({

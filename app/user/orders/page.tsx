@@ -10,6 +10,7 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table';
+import Pagination from '@/components/shared/pagination';
 
 export const metadata: Metadata = {
   title: 'My Orders',
@@ -19,6 +20,7 @@ const OrderPage = async (props: {
   searchParams: Promise<{ page: string }>;
 }) => {
   const { page } = await props.searchParams;
+
   const orders = await getMyOrders({
     page: Number(page) || 1,
   });
@@ -65,6 +67,12 @@ const OrderPage = async (props: {
             ))}
           </TableBody>
         </Table>
+        {orders.totalPages > 1 && (
+          <Pagination
+            page={Number(page) || 1}
+            totalPages={orders?.totalPages}
+          />
+        )}
       </div>
     </div>
   );

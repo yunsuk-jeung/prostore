@@ -40,15 +40,15 @@ const Menu = async () => {
                 <ShoppingCart /> Cart
               </Link>
             </Button>
-            {/* {session ? ( */}
-            {/*   <Button onClick={signOutUser}>Sign Out</Button> */}
-            {/* ) : ( */}
-            <Button asChild>
-              <Link href="/sign-in">
-                <UserIcon /> Sign In
-              </Link>
-            </Button>
-            {/* )} */}
+            {session ? (
+              <Button onClick={signOutUser}>Sign Out</Button>
+            ) : (
+              <Button asChild>
+                <Link href="/sign-in">
+                  <UserIcon /> Sign In
+                </Link>
+              </Button>
+            )}
             <SheetDescription></SheetDescription>
           </SheetContent>
         </Sheet>

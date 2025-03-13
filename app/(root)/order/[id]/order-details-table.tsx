@@ -16,7 +16,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useToast } from '@/hooks/use-toast';
-import { startTransition, useTransition } from 'react';
+import { useTransition } from 'react';
 import {
   PayPalButtons,
   PayPalScriptProvider,

@@ -1,20 +1,20 @@
 import { Button } from '@/components/ui/button';
 import ModeToggle from './mode-toggle';
 import Link from 'next/link';
-import { EllipsisVertical, ShoppingCart, UserIcon } from 'lucide-react';
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetTitle,
-  SheetTrigger,
-} from '@/components/ui/sheet';
+import { ShoppingCart } from 'lucide-react';
 import UserButton from './user-button';
-import { auth } from '@/auth';
-import { signOutUser } from '@/lib/actions/user.actions';
-
+// import { auth } from '@/auth';
+// import { EllipsisVertical, ShoppingCart, UserIcon } from 'lucide-react';
+// import {
+//   Sheet,
+//   SheetContent,
+//   SheetDescription,
+//   SheetTitle,
+//   SheetTrigger,
+// } from '@/components/ui/sheet';
+// import { signOutUser } from '@/lib/actions/user.actions';
 const Menu = async () => {
-  const session = await auth();
+  // const session = await auth();
 
   return (
     <div className="flex justify-end gap-3">

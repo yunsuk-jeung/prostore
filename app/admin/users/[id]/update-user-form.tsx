@@ -38,7 +38,7 @@ const UpdateUserForm = ({
     resolver: zodResolver(updateUserSchema),
     defaultValues: user,
   });
-  const onSubmit = async (values: z.inver<typeof updateUserSchema>) => {
+  const onSubmit = async (values: z.infer<typeof updateUserSchema>) => {
     try {
       const res = await updateUser({
         ...values,

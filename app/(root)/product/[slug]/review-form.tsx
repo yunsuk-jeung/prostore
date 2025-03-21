@@ -8,6 +8,7 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
+  DialogTrigger,
 } from '@/components/ui/dialog';
 import {
   Form,
@@ -48,7 +49,8 @@ const ReviewForm = ({
   productId: string;
   onReviewSubmitted: () => void;
 }) => {
-  const [open, setOpen] = useState(false);
+  const [dialogOpen, setDialogOpen] = useState(false);
+  const [selectOpen, setSelectOpen] = useState(false);
 
   const { toast } = useToast();
 
@@ -70,7 +72,7 @@ const ReviewForm = ({
       form.setValue('rating', review.rating);
     }
 
-    setOpen(true);
+    setDialogOpen(true);
   };
 
   // submit form handler
@@ -84,7 +86,7 @@ const ReviewForm = ({
         description: res.message,
       });
     }
-    setOpen(false);
+    setDialogOpen(false);
     onReviewSubmitted();
 
     toast({
@@ -93,11 +95,19 @@ const ReviewForm = ({
   };
 
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
+    <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
       <Button onClick={handleOpenForm} variant={'default'}>
         Write a Review
       </Button>
-      <DialogContent className="sm:max-w-[425]">
+      <DialogContent
+        className="sm:max-w-[425]"
+        onEscapeKeyDown={(e) => {
+          if (selectOpen) {
+            e.preventDefault();
+            setSelectOpen(false);
+          }
+        }}
+      >
         <Form {...form}>
           <form method="post" onSubmit={form.handleSubmit(onSubmit)}>
             <DialogHeader>
@@ -141,6 +151,10 @@ const ReviewForm = ({
                       <Select
                         onValueChange={field.onChange}
                         value={field.value?.toString()}
+                        onOpenChange={(open) => {
+                          setSelectOpen(open);
+                        }}
+                        open={selectOpen}
                       >
                         <FormControl>
                           <SelectTrigger>

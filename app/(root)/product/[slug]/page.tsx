@@ -14,7 +14,10 @@ const ProductDetailsPage = async (props: {
   params: Promise<{ slug: string }>;
 }) => {
   const { slug } = await props.params;
+  const starttim = new Date();
   const product = await getProductBySlug(slug);
+
+  console.log(Number(new Date()) - Number(starttim));
 
   if (!product) notFound();
 

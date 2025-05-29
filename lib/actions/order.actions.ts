@@ -86,7 +86,6 @@ export async function createOrder() {
       });
       return insertedOrder.id;
     });
-    console.log('hey');
 
     if (!insertedOrderId) throw new Error('Order not created');
     return {

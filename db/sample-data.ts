@@ -22,8 +22,8 @@ const sampleData = {
       category: "Men's Dress Shirts",
       description: 'Classic Polo style with modern comfort',
       images: [
-        '/images/sample-products/p1-1.jpg',
-        '/images/sample-products/p1-2.jpg',
+        'https://l5wjt4vbfy.ufs.sh/f/GwKvHFNqcOhVDzqtoGlGAxBRCqULJQfPz7jDFatN9TcbZmYe',
+        'https://l5wjt4vbfy.ufs.sh/f/GwKvHFNqcOhVZgBrOtP7ZJ8iOhl4NypeWYXRAmodu2Us3trE',
       ],
       price: 59.99,
       brand: 'Polo',
@@ -31,7 +31,8 @@ const sampleData = {
       numReviews: 10,
       stock: 5,
       isFeatured: true,
-      banner: 'banner-1.jpg',
+      banner:
+        'https://l5wjt4vbfy.ufs.sh/f/GwKvHFNqcOhVmTQTrv8EWEKh9URpQqy6bG8io1nvT0jBHg5I',
     },
     {
       name: 'Brooks Brothers Long Sleeved Shirt',
@@ -39,8 +40,8 @@ const sampleData = {
       category: "Men's Dress Shirts",
       description: 'Timeless style and premium comfort',
       images: [
-        '/images/sample-products/p2-1.jpg',
-        '/images/sample-products/p2-2.jpg',
+        'https://l5wjt4vbfy.ufs.sh/f/GwKvHFNqcOhVbfSkbiAQR60mSULYWKGdgMy7XB9qChkxbefI',
+        'https://l5wjt4vbfy.ufs.sh/f/GwKvHFNqcOhVVG6dCUgO6NzW5TuPi9lGUAn2jQ0MI17FtpbD',
       ],
       price: 85.9,
       brand: 'Brooks Brothers',
@@ -48,7 +49,8 @@ const sampleData = {
       numReviews: 8,
       stock: 10,
       isFeatured: true,
-      banner: 'banner-2.jpg',
+      banner:
+        'https://l5wjt4vbfy.ufs.sh/f/GwKvHFNqcOhVwYzqzNaHEvDJT2Mqg5r9XsIpydxal1ZNoRmW',
     },
     {
       name: 'Tommy Hilfiger Classic Fit Dress Shirt',
@@ -56,8 +58,8 @@ const sampleData = {
       category: "Men's Dress Shirts",
       description: 'A perfect blend of sophistication and comfort',
       images: [
-        '/images/sample-products/p3-1.jpg',
-        '/images/sample-products/p3-2.jpg',
+        'https://l5wjt4vbfy.ufs.sh/f/GwKvHFNqcOhV9zBOYn385kcNP2u3bREtFsIgG4ynKS7wX1hv',
+        'https://l5wjt4vbfy.ufs.sh/f/GwKvHFNqcOhVlNVjRJI9z1i4RKQWIusyOjwb2703ctdHVpMZ',
       ],
       price: 99.95,
       brand: 'Tommy Hilfiger',
@@ -73,8 +75,8 @@ const sampleData = {
       category: "Men's Dress Shirts",
       description: 'Streamlined design with flexible stretch fabric',
       images: [
-        '/images/sample-products/p4-1.jpg',
-        '/images/sample-products/p4-2.jpg',
+        'https://l5wjt4vbfy.ufs.sh/f/GwKvHFNqcOhVqdLDEEBQmDHKL0rh4pY3OyVX69GbPxit2AeR',
+        'https://l5wjt4vbfy.ufs.sh/f/GwKvHFNqcOhV7qBtTbndfQvmMKySP5Fgl1TIURYLsX4aoBb9',
       ],
       price: 39.95,
       brand: 'Calvin Klein',
@@ -90,8 +92,8 @@ const sampleData = {
       category: "Men's Dress Shirts",
       description: 'Iconic Polo design with refined oxford fabric',
       images: [
-        '/images/sample-products/p5-1.jpg',
-        '/images/sample-products/p5-2.jpg',
+        'https://l5wjt4vbfy.ufs.sh/f/GwKvHFNqcOhVDmHHb0MlGAxBRCqULJQfPz7jDFatN9TcbZmY',
+        'https://l5wjt4vbfy.ufs.sh/f/GwKvHFNqcOhVsRdGunBc8NdK4ih7tWygl5aLwAeVZxY6QnH9',
       ],
       price: 79.99,
       brand: 'Polo',
@@ -107,8 +109,8 @@ const sampleData = {
       category: "Men's Sweatshirts",
       description: 'Soft, stylish, and perfect for laid-back days',
       images: [
-        '/images/sample-products/p6-1.jpg',
-        '/images/sample-products/p6-2.jpg',
+        'https://l5wjt4vbfy.ufs.sh/f/GwKvHFNqcOhVGJcvZBNqcOhVultwE2A7fQIs1WNSzryKUMRF',
+        'https://l5wjt4vbfy.ufs.sh/f/GwKvHFNqcOhVndW1AvHOJiMDTke6UXZESftmy9asqvI7p01L',
       ],
       price: 99.99,
       brand: 'Polo',

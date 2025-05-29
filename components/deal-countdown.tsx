@@ -61,12 +61,12 @@ const DealCountDown = () => {
   ) {
     return (
       <section className="grid grid-cols-1 md:grid-cols-2 my-20">
-        <div className="flex flex-col gap-2 justify-center">
+        <div className="flex flex-col gap-2 justify-center items-center">
           <h3 className="text-3xl font-bold">Deal Has Ended</h3>
           <p>
             This deal is no longer available. Check out our latest promotion
           </p>
-          <div className="text-center">
+          <div className="text-center  mb-4">
             <Button asChild>
               <Link href="/search">View Products</Link>
             </Button>

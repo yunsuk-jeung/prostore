@@ -16,8 +16,8 @@ const ProductList = ({
       {data.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {limitedData.map((product: Product) => (
-            <div className="mx-auto">
-              <ProductCard key={product.slug} product={product} />
+            <div className="mx-auto" key={product.slug}>
+              <ProductCard product={product} />
             </div>
           ))}
         </div>
